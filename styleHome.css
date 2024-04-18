@@ -1,0 +1,300 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'); /*fonte menu de navegação*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bahiana&family=Roboto:wght@300;400;500&display=swap'); /*fonte bahiana*/
+
+
+
+
+
+:root{
+    --corparagrafos: #4b4b4b;
+    --cor02: #f69eac;
+    --coe03: #653321;
+
+    --fonttitulos: "Bahiana", sans-serif;
+    --fontparagrafos:  "Roboto", sans-serif;
+
+}
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color:   white;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    background-color:  white;
+
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+a{
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.28);
+    font-weight: 400    ;
+    text-decoration: none;
+    font-size: large;
+    padding: 10px;
+    font-family: var(--fontparagrafos);
+    color: #4b4b4bc4;
+}
+section {
+    padding: 150px;
+    
+}
+#conteudo-principal-1{
+    color: var(--coe03);
+    font-family: var(--fonttitulos);
+    font-size: 120px;
+}
+#conteudo-principal-2{
+    color:  var(--cor02);
+    font-family: var(--fonttitulos);
+    font-size: 120px;
+}
+.conteudo-principal-paragrafo{
+    color: var(--corparagrafos);
+    font-weight: 500;
+    font-family: var(--fontparagrafos);
+    font-size: large;
+}
+.conteudo-secundario{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+    background-color: #efefefe2;
+}
+
+.h2-1conteudo-secundario{
+    font-family: var(--fonttitulos);
+    color: var(--coe03);
+    font-size: 80px;
+}
+.h2-2-conteudo-secundario{
+    font-family: var(--fonttitulos);
+    color: var(--cor02);
+    font-size: 80px;
+}
+.p-conteudo-secundario{
+    font-family: var(--fontparagrafos);
+    color: var(--corparagrafos);
+    font-size: 18px;
+}
+.bt-conteudo-secundario{
+    margin-top: 20px;
+    border: none;
+    background-color: var(--cor02);
+    color: #efefef;
+    font-size: 15px;
+    min-height: 18px;
+    width: 180px;
+    cursor: pointer;
+    padding: 10px;
+}
+.meu-titulo-card{
+    padding-bottom: 80px;
+}
+.h3-titulo-card{
+    font-family: var(--fonttitulos);
+    color: var(--coe03);
+    font-weight: 200;
+    font-size: 80px;
+    text-align: center;
+}
+.p-titulo-card{
+    color: var(--corparagrafos);
+    font-weight: 500;
+    font-family: var(--fontparagrafos);
+    font-size: large;
+    text-align: center;
+}
+
+.my-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+}
+.my-card .card2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+    background: #fff;
+    transition: .5s;
+}
+.my-card .card2:hover{
+    height: 320px;
+}
+.my-card .card2 .caixaimg{
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: .5s;
+}
+.my-card .card2 .caixaimg .img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.my-card .card2 .texto-card {
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    height: 35px;
+    padding: 0 30px;
+    overflow: hidden;
+    text-align: center;
+}
+.my-card .card2:hover .texto-card {
+    top: 150px;
+    height: 250px;
+
+}
+.my-card .card2:hover .caixaimg{
+    top: -100px;
+    scale: .75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.my-card .card2 .texto-card .h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 3rem;
+    color: var(--coe03);
+    font-family: var(--fontparagrafos);
+}
+.my-card .card2 .texto-card .p {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: var(--cor02);
+    font-family: var(--fontparagrafos);
+}
+
+
+
+.bt-pedido-card{
+    text-align: center;
+}
+.botao-pedido-card{
+    background-color: var(--cor02);
+    color: #efefef;
+    font-family: var(--fontparagrafos);
+    font-size: 15px;
+    width: 230px;
+    height: 50px;
+    border: none;
+    padding: 10px;
+    margin-top: 50px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+        /*FOOTER */
+.div-geral-footer{
+    background-color: #efefef;
+    padding: 20px;
+}
+.h3-titulo-formulario{
+    font-family: var(--fonttitulos);
+    color: var(--coe03);
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 42px;
+}
+.space-around{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    
+}
+.my-contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+.input  {
+    padding: 7px;
+    margin: 12px;
+    text-decoration: none;
+}
+#balao-conversa{
+    height: 120px;
+}
+span{
+    font-weight: bold;
+    font-size: small;
+    color: #4b4b4bb6;
+    font-family: var(--fontparagrafos);
+    padding: 3px;
+}
+.contatos{
+    padding-top: 28px;
+}
+.p-my-contact{
+    font-family: var(--fontparagrafos);
+    color: #3a3a3a84;
+    font-weight: bold;
+    font-size: 12px;
+    padding-left: 10px;
+    text-align: left;
+}
+.img-instagram{
+    height: 18px;
+    width: 18px;
+}
+#bt-form-footer{
+    background-color: var(--cor02);
+    color: #efefef;
+    font-family: var(--fontparagrafos);
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+.last-footer{
+    text-align: center;
+    padding: 15px;
+    background-color: #1d1d1c;
+    color: #4b4b4b;
+    font-family: var(--fontparagrafos);
+}
+
