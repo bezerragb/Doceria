@@ -252,13 +252,19 @@ section {
     flex-direction: row;
     justify-content: left;
 }
-.input  {
+input  {
     padding: 7px;
     margin: 12px;
-    text-decoration: none;
+    border-style: none;
+    border-radius: 7px;
 }
-#balao-conversa{
+#message{
     height: 120px;
+    width: 325px;
+    border-style: none;
+    border-radius: 7px;
+    margin-left: 10px;
+    margin-top: 7px;
 }
 span{
     font-weight: bold;
@@ -290,7 +296,7 @@ span{
     border: none;
     cursor: pointer;
 }
-.last-footer{
+.rodape{
     text-align: center;
     padding: 15px;
     background-color: #1d1d1c;

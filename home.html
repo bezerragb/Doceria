@@ -6,6 +6,7 @@
     <title>Vs Gourmert</title>
     <link rel="shortcut icon" href="fotos/favicon_io (1)/android-chrome-512x512.png" type="image/x-icon">
     <link rel="stylesheet" href="styleHome.css">
+    
 </head>
 
 
@@ -89,44 +90,42 @@
             <h3 class="h3-titulo-formulario">CONTATO</h3>
             <div class="space-around">
                 <div class="div-formulario">
-                    <form action="" class="form" method="post">
-                        <input type="text" placeholder="Seu nome" class="input" required/>
-                        <input type="text" placeholder="Número telefone" class="input">
-                        <input type="text" placeholder="Seu email" class="input">
-                        <input type="text" class="input" id="balao-conversa">
-                        <input type="button" value="Envie sua experiencia!" class="input" id="bt-form-footer">
+                    <form class="form" >
+                        <input type="text" placeholder="Seu nome" class="form-name" required/>
+                        <input type="text" placeholder="Número telefone" class="form-numero">
+                        <input type="email" placeholder="Seu email" class="form-email" id="email" required/>
+                        <textarea name="message" id="message" required></textarea>
+                        <input type="submit" value="Envie sua experiencia!" class="form-bt" id="bt-form-footer" required/>
                     </form>
                 </div>
                 <div class="contatos">
-                    <div class="my-contact"><span>Telefone</span><p class="p-my-contact">(88) 9 8888-8888</p></div>
-                    <div class="my-contact"><span>Email</span> <p class="p-my-contact">vsgourmert@gmail.com</p></div>
-                    <div class="my-contact"><span>Instagram</span><p class="p-my-contact"><a href="https://www.instagram.com/vsbrigadeirosgmt_/" target="_blank"     ><img class="img-instagram" src="fotos/newintagram.png" alt="" ></a></p></div>
+                    <div class="my-contact">
+                        <span>Telefone</span>
+                        <p class="p-my-contact">(88) 9 8888-8888</p>
+                    </div>
+                    <div class="my-contact">
+                        <span>Email</span>
+                        <p class="p-my-contact">vsgourmert@gmail.com</p>
+                    </div>
+                    <div class="my-contact">
+                        <span>Instagram</span>
+                        <p class="p-my-contact">
+                            <a href="https://www.instagram.com/vsbrigadeirosgmt_/" target="_blank"><img class="img-instagram" src="fotos/newintagram.png" alt="" ></a>
+                        </p>
+                    </div>
                     
                 </div>
             </div>
         </div>
         <div>
         </div>
+
+        <div class="rodape">
+            <p>Feito por: <span>Gabriel Bezerra</span></p>
+        </div>
+
     </footer>
-
-
-
-
-
-
-
-
-
-
-
-    <div class="last-footer">
-        <p>Feito por: <span>Gabriel Bezerra</span></p>
-    </div>
-
-    <script>
-        function wpp(){
-            let confirmacao = confirm("ao clicar em ok você será redirecionado para o nosso whatszapp, deseja prosseguir?")
-        }
-    </script>
+    
+    <script src="home.js"></script>
 </body>
 </html>
